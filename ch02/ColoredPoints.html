@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <div class="canvas-container">
+		<canvas id="webgl" width="400" height="400">
+		Please use a browser that supports "canvas"
+		</canvas>
+		<canvas id="my_drawing" width="400" height="400">
+		Please use a browser that supports "canvas"
+		</canvas>
+    </div>
+	<img src="image.jpg">
+	<input type="button" id="Squares" value="Squares">
+	<input type="button" id="Circles" value="Circles">
+	<input type="button" id="Triangles" value="Triangles">
+	<label for="red">red:</label>
+	<input type="range" id="red" min="0" max="1" value="0.5" step="any">
+	<label for="green">green:</label>
+	<input type="range" id="green" min="0" max="1" value="0.5" step="any">
+	<label for="blue">blue:</label>
+	<input type="range" id="blue" min="0" max="1" value="0.5" step="any">
+	<label for="sides">sides:</label>
+	<input type="range" id="sides" min="3" max="10" value="5">
+	<label for="shape size">shape size:</label>
+	<input type="range" id="shape size" min="0" max="1" value="0.5" step="any">
+	<input type="button" id="Clear Canvas" value="Clear Canvas">
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="ColoredPoints.js"></script>
+  </body>
+</html>

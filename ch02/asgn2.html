@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<p>Open the console to find the FPS value.</p>
+	<label for="rotation">rotation:</label>
+	<input type="range" id="rotation" min="0" max="360" value="0" step="any">
+	<label for="animation on/off">animation on/off:</label>
+	<input type="range" id="animation on/off" min="0" max="1" value="0" step="1">
+	<label for="first joint">first joint angle:</label>
+	<input type="range" id="first joint" min="0" max="180" value="0" step="any">
+	<label for="first joint">second joint angle:</label>
+	<input type="range" id="second joint" min="0" max="180" value="0" step="any">
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="asgn2.js"></script>
+  </body>
+</html>
